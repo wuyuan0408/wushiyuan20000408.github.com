@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="UTF-8">
+	<title>三水個人網頁</title>
+	<link rel="Shortcut Icon" type="image/x-icon" href="assets/img/smalllogo.ico" />
+	<script src="assets/js/jquery-3.4.0.min.js"></script> <!--載入jquery-->
+	<style>
+		ul {
+                  display: block;
+                  list-style-type: disc;
+                  margin-block-start: 1em;
+                  margin-block-end: 1em;
+                  margin-inline-start: 0px;
+                  margin-inline-end: 0px;
+                  padding-inline-start: 40px;
+}
+        body{ 
+        	      overflow: auto;
+	              height: 100%;
+                  background-attachment: fixed;
+                  transition: all 0.5s ease;
+                  background-size: 100% ;
+                  background-repeat: repeat-y;
+                  background-image: url("assets/img/background_01.jpg");
+              }
+		.logo {
+                width: 150px;
+                margin-top: 20px;
+                float: left;}
+		.header{
+                padding: 20px 50px;
+                width: 1200px;
+                height: 150px;
+                }
+        .nav {
+                background: #FFE076; /*選單喔喔喔!!*/
+                width: 1000px;
+                height: 70px;
+                margin-left: calc(50% - 500px);
+                text-align: center;
+                margin-top: 10px;
+                font-size: 24px;
+                border-radius: 2px;
+                font-family: "標楷體";
+                }
+        #menu ul{
+                 float:right;
+                 list-style:none;
+                 }
+        #menu ul li{
+                 float:left;
+                 margin:0px 20px 0px 20px;
+                 }
+        .hka{color:black;   /*選單跟著滑鼠動次動*/
+        	 transition:0.5s;
+             padding: 5px;}
+        .hka:hover{color: black;
+        	       background-color:#00FF00;
+        	       border-radius: 10px;
+        	       border: 5px yellow solid;
+        	       padding: 0px;}
+        .hkb{color:black;   /*紅字跟著滑鼠動次動*/
+        	 transition:0.5s;
+             padding: 3px;}
+        .hkb:hover{color: black;
+        	       background-color:#00FF00;
+        	       border-radius: 10px;
+        	       border: 3px red solid;
+        	       padding: 3px;}
+        .inoneDiv {    /*主窗格*/
+
+                   width:1400px;
+                   height:2000px;
+                 }   
+        .mainShow {
+
+                   margin: 10px 5px;
+                   padding: 15px 0px;
+                   border: 1px #ccc solid;
+                   width: 1000px;
+                   height:2000px;
+                   float: left;
+                   background-color: rgba(255,255,255,0.3);
+               }
+        .main_goshowa {
+        	       display: block;;
+                   width: 960px;
+                   padding: 8px;
+                   border: 5px green double;
+                   margin: 10px 5px;
+        }
+         .main_goshowb {
+        	       display: block;;
+                   width: 960px;
+                   padding: 8px;
+                   border: 5px #0000CD double;
+                   margin: 10px 5px;
+        }
+        .sidebar_name {
+        	       right: 50px;
+        	       display: block;;
+        	       z-index: 3;
+        	       position:absolute;
+                   width: 350px;
+                   padding: 8px;
+                   border: 5px blue double;
+                   margin: 10px 5px;
+                   float: left;
+                   background-color: rgba(255,255,255,0.3);
+                  }
+        .text_need{
+        	       font-size: 20px;
+        }
+        .text_area{
+        	       font-size: 24px;
+        }
+        .gotop {
+                   position: fixed;
+                   right: 30px;
+                   bottom: 40px;
+                   z-index: 9;
+              }
+        #footer {
+                     padding:0;
+                     display:block;
+                     background-color: rgba(0,204,255,0.3);
+        	         min-width: 100%;
+                     margin-top: 20px!important;
+                     text-align:center;}
+
+	</style>
+	<script>
+		function gogogo(){ /*朝指定位置前進中  使用jquery喔喔 速度850*/
+       		$('.here').css({'opacity':0,});
+			$('#'+gogogo.arguments[0]+' .here').css({'opacity':1,});
+			$('html,body').animate( { scrollTop: ($('#'+gogogo.arguments[0]).offset().top)},850);}
+	</script>
+</head>
+<body>
+	<div class="background"></div>
+	<div class="header" id="top">
+	    <div class="logo"><a ><img  src="assets/img/logo.png" alt="三水之沅,歡迎您!!" width="800px"></a></div>
+	</div>
+	<div class="nav" id="menu">
+	    <nav>
+	        <ul>
+	    	    <li><a href="#learn" class="hka" onclick="gogogo('learn')">學歷背景</a></li>
+	    	    <li><a href="#society" class="hka" onclick="gogogo('society')">社團經驗</a></li>
+	    	    <li><a href="#work" class="hka" onclick="gogogo('work')">工作經驗</a></li>
+	    	    <li><a href="#interest" class="hka" onclick="gogogo('interest')">興趣</a></li>
+	    	    <li><a href="#goal" class="hka" onclick="gogogo('goal')">目標</a></li>
+	    	    <li><a href="#ownn" class="hka" onclick="gogogo('ownn')">自我期許</a></li>
+	    	    <li><a href="#life" class="hka" onclick="gogogo('life')">生活紀錄</a></li>
+	        </ul>
+	    </nav>
+    </div>
+    <div class="inoneDiv">
+        <div class="mainShow">
+        	<div id="learn" class="main_goshowa">
+        	    <h1 class="hka">學歷背景</h1><br>
+        	    <span class="text_area">
+                一、部分程式語言的基礎能力<br>
+                包含 <a class="hkb">C#(.NET)</a> 與 <a class="hkb">Java</a> 與 <a class="hkb">python3</a> <br><br>
+                二、具有前端網頁設計基礎 <br>
+                包含 <a class="hkb">HTML5</a> 與 <a class="hkb">CSS3</a><br><br>
+                三、目前就讀<a class="hkb">中原大學資管系</a><br><br>
+        	    </span>
+        	</div>
+        	<br>
+        	<div id="society" class="main_goshowb">
+        	    <h1 class="hka">社團經驗</h1><br>
+        	    <span class="text_area">
+                每日因花<a class="hkb">三小時的時間</a>在通勤，故無參加學校任何的社團活動。<br><br>
+        	    </span>
+        	</div>
+        	<br>
+        	<div id="work" class="main_goshowa">
+        	    <h1 class="hka">工作經驗</h1><br>
+        	    <span class="text_area">
+                曾經幫人剪片，以及使用模板幫人製作開頭影片。<br><br>
+        	    </span>
+        	</div>
+        	<br>
+        	<div id="interest" class="main_goshowb">
+        	    <h1 class="hka">興趣</h1><br>
+        	    <span class="text_area">
+                玩<a class="hkb">傳說對決</a>，歷史桃園市第24名莉莉安，新竹縣第9莉莉安。<br><br>
+                同時也喜歡看古文觀止、古詩全集等<a class="hkb">文言文創作</a>。<br><br>
+                喜歡<a class="hkb">攝影</a>，特別是喜歡將長時間影片以濃縮的方式做成縮時。<br><br>
+                <!--<img src="assets/img/g_01.jpg" style="width:300px;">
+                <img src="assets/img/g_02.jpg" style="width:300px;">
+                <video width="380px" controls>
+                     <source src="assets/video/short.mp4" type="video/mp4">
+                </video>-->
+        	    </span>
+        	</div>
+        	<br>
+        	<div id="goal" class="main_goshowa">
+        	    <h1 class="hka">目標</h1><br>
+        	    <span class="text_area">
+                曾經幫人剪片，以及使用模板幫人製作開頭影片。<br><br>
+        	    </span>
+        	</div>		
+        	<br>	
+        	<div id="ownn" class="main_goshowb">
+        	    <h1 class="hka">自我期許</h1><br>
+        	    <span class="text_area">
+                曾經幫人剪片，以及使用模板幫人製作開頭影片。<br><br>
+        	    </span>
+        	</div>	
+        	<br>	
+        	<div id="life" class="main_goshowa">
+        	    <h1 class="hka">生活</h1><br>
+        	    <span class="text_area">
+                曾經幫人剪片，以及使用模板幫人製作開頭影片。<br><br>
+        	    </span>
+        	</div>			
+        </div>
+        <div class="sidebar_name">
+        	<h3>關於作者</h3>
+        	<div class="fourpic">
+        	<img src="assets/img/p1.jpg" alt="" style="height: 300px;"></div><br>
+        	<span class="text_need">
+        		作者：吳學沅<br>
+        		電話：0908112505(台灣之星)<br>
+        		地址：<br>
+        		新竹縣關西鎮南新里8鄰苧子園31號<br>
+        		e-mail：
+        		<a href="mailto:ffooger3@gmail.com">ffooger3@gmail.com</a>
+        	</span><br>
+        	<a href="https://www.facebook.com/ffoogera/"><img src="assets/img/linway1.png" style="height:50px;"></a>
+            <a href="https://www.instagram.com/_yuan0408/"><img src="assets/img/linway2.png" style="height:50px;"></a>
+            <a href="https://www.youtube.com/channel/UCkDxGhZ-pdGj3gZIBfcpAMQ"><img src="assets/img/linway3.png" style="height:50px;"></a>
+        </div>
+        <div id="gotop" class="gotop">
+        	    <a href="#top"  onclick="gogogo('top')"><img src="assets/img/gotop.png" style="height: 80px;"></a>
+        </div>	
+    </div>
+    <br>
+    <div id="footer">
+    	<br>
+       <p>Posted by: W3School</p>
+       <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
+    </div>
+</body>
+</html>
