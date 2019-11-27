@@ -1,0 +1,194 @@
+
+		ul {
+                  display: block;
+                  list-style-type: disc;
+                  margin-block-start: 1em;
+                  margin-block-end: 1em;
+                  margin-inline-start: 0px;
+                  margin-inline-end: 0px;
+                  padding-inline-start: 40px;
+}
+        body{ 
+        	      overflow: auto;
+	              height: 100%;
+                  background-attachment: fixed;
+                  transition: all 0.5s ease;
+                  background-size: 100% ;
+                  background-repeat: repeat-y;
+                  background-image: url("../img/background_01.jpg");
+              }
+		.logo {
+                width: 150px;
+                margin-top: 20px;
+                float: left;}
+		.header{
+                padding: 20px 50px;
+                width: 1200px;
+                height: 150px;
+                }
+        .nav {
+                background: #FFE076; /*選單喔喔喔!!*/
+                width: 1000px;
+                height: 70px;
+                margin-left: calc(50% - 500px);
+                text-align: center;
+                margin-top: 10px;
+                font-size: 24px;
+                border-radius: 2px;
+                font-family: "標楷體";
+                }
+        #menu ul{
+                 float:right;
+                 list-style:none;
+                 }
+        #menu ul li{
+                 float:left;
+                 margin:0px 20px 0px 20px;
+                 }
+        .hka{color:black;   /*選單跟著滑鼠動次動*/
+        	 transition:0.5s;
+             padding: 5px;}
+        .hka:hover{color: black;
+        	       background-color:#00FF00;
+        	       border-radius: 10px;
+        	       border: 5px yellow solid;
+        	       padding: 0px;}
+        .hkb{color:black;   /*紅字跟著滑鼠動次動*/
+        	 transition:0.5s;
+             padding: 3px;}
+        .hkb:hover{color: black;
+        	       background-color:#00FF00;
+        	       border-radius: 10px;
+        	       border: 3px red solid;
+        	       padding: 3px;}
+        .inoneDiv {    /*主窗格*/
+
+                   width:1400px;
+                   height:3050px;
+                 }   
+        .mainShow {
+
+                   margin: 10px 5px;
+                   padding: 15px 0px;
+                   border: 1px #ccc solid;
+                   width: 1000px;
+                   height:3050px;
+                   float: left;
+                   background-color: rgba(255,255,255,0.3);
+               }
+        .main_goshowa {
+        	       display: block;;
+                   width: 960px;
+                   padding: 8px;
+                   border: 5px green double;
+                   margin: 10px 5px;
+        }
+         .main_goshowb {
+        	       display: block;;
+                   width: 960px;
+                   padding: 8px;
+                   border: 5px #0000CD double;
+                   margin: 10px 5px;
+        }
+        .main_goshowc {
+                   display: block;;
+                   width: 960px;
+                   height:1040px;
+                   padding: 8px;
+                   border: 5px #0000CD double;
+                   margin: 10px 5px;
+
+        }
+        .main_life{             
+                    display: block;
+                    width: 400px;
+                    padding: 8px;
+                    border: 4px green double;
+                    margin: 10px 5px;
+                    float:left;
+        }
+
+         .lifecard {            /*生活-外框*/
+                    background-color: transparent;
+                    width:360px;
+                    height:270px;
+                    border: 5px double #0000CD;
+ 
+          }
+          .lifecard-overin {   /*生活-內框*/
+                    position: relative;
+                    width:360px;
+                    height:270px;
+                    text-align: center;
+                    transition: transform 1s;
+                    transform-style: preserve-3d;
+          }
+          .lifecard-img {     /*生活-圖'*/
+                    position: absolute;
+                    width:360px;
+                    height:270px;
+ 
+          }
+          .lifecard-text {     /*生活-字*/
+                    position: absolute;
+                    width:360px;
+                    height:270px;
+                    font-size: 24px;
+                    transform: rotateY(180deg);
+                    background-color: rgba(255,255,255,0.7);
+          }
+          .lifecard:hover .lifecard-overin {   /*生活變化*/
+                    transform: rotateY(180deg);
+          }
+
+        .sidebar_name {                          /*作者*/
+        	       right: 50px;
+        	       display: block;;
+        	       z-index: 3;
+        	       position:absolute;
+                   width: 350px;
+                   padding: 8px;
+                   border: 5px blue double;
+                   margin: 10px 5px;
+                   float: left;
+                   background-color: rgba(255,255,255,0.3);
+                  }
+        .text_need{
+        	       font-size: 20px;
+        }
+        .text_area{
+        	       font-size: 24px;
+        }
+        .myDiv {  /*投影片*/
+                    width: 720px;
+                    height: 540px;
+                    margin: 20px auto;
+                    background-size: 720px,540px;
+                    background-position: center;
+                    -webkit-animation-name: 'loop';
+                    -webkit-animation-duration: 25s;
+                    -webkit-animation-iteration-count: infinite;
+                }
+                 @-webkit-keyframes "loop"{
+                 0% {background: url(../img/b_10807132.jpg) no-repeat;height: 540px;}
+                 16% {background: url(../img/b_1020630.jpg) no-repeat;height: 540px;}
+                 32% {background: url(../img/b_1050124.jpg) no-repeat;height: 540px;}
+                 46% {background: url(../img/b_1060520.jpg) no-repeat;height: 540px;}
+                 60% {background: url(../img/b_1080114.jpg) no-repeat;height: 540px;}
+                 76% {background: url(../img/b_1080511.jpg) no-repeat;height: 540px;}
+                 90% {background: url(../img/b_1080713.jpg) no-repeat;height: 540px;}
+                 100% {background: url(../img/b_10807132.jpg) no-repeat;height: 540px;}
+               }
+        .gotop {                              /*萬馬奔頂*/
+                   position: fixed; 
+                   right: 30px;
+                   bottom: 40px;
+                   z-index: 9;
+              }
+        #footer {                             /*底*/
+                     padding:0;
+                     display:block;
+                     background-color: rgba(255,255,255,0.3);
+        	         min-width: 100%;
+                     margin-top: 20px!important;
+                     text-align:center;}
