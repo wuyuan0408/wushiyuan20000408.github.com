@@ -4,132 +4,9 @@
 	<meta charset="UTF-8">
 	<title>三水個人網頁</title>
 	<link rel="Shortcut Icon" type="image/x-icon" href="assets/img/smalllogo.ico" />
+	<link rel="stylesheet" type="text/css" href="assets/CSS/main.css">
 	<script src="assets/js/jquery-3.4.0.min.js"></script> <!--載入jquery-->
-	<style>
-		ul {
-                  display: block;
-                  list-style-type: disc;
-                  margin-block-start: 1em;
-                  margin-block-end: 1em;
-                  margin-inline-start: 0px;
-                  margin-inline-end: 0px;
-                  padding-inline-start: 40px;
-}
-        body{ 
-        	      overflow: auto;
-	              height: 100%;
-                  background-attachment: fixed;
-                  transition: all 0.5s ease;
-                  background-size: 100% ;
-                  background-repeat: repeat-y;
-                  background-image: url("assets/img/background_01.jpg");
-              }
-		.logo {
-                width: 150px;
-                margin-top: 20px;
-                float: left;}
-		.header{
-                padding: 20px 50px;
-                width: 1200px;
-                height: 150px;
-                }
-        .nav {
-                background: #FFE076; /*選單喔喔喔!!*/
-                width: 1000px;
-                height: 70px;
-                margin-left: calc(50% - 500px);
-                text-align: center;
-                margin-top: 10px;
-                font-size: 24px;
-                border-radius: 2px;
-                font-family: "標楷體";
-                }
-        #menu ul{
-                 float:right;
-                 list-style:none;
-                 }
-        #menu ul li{
-                 float:left;
-                 margin:0px 20px 0px 20px;
-                 }
-        .hka{color:black;   /*選單跟著滑鼠動次動*/
-        	 transition:0.5s;
-             padding: 5px;}
-        .hka:hover{color: black;
-        	       background-color:#00FF00;
-        	       border-radius: 10px;
-        	       border: 5px yellow solid;
-        	       padding: 0px;}
-        .hkb{color:black;   /*紅字跟著滑鼠動次動*/
-        	 transition:0.5s;
-             padding: 3px;}
-        .hkb:hover{color: black;
-        	       background-color:#00FF00;
-        	       border-radius: 10px;
-        	       border: 3px red solid;
-        	       padding: 3px;}
-        .inoneDiv {    /*主窗格*/
 
-                   width:1400px;
-                   height:2000px;
-                 }   
-        .mainShow {
-
-                   margin: 10px 5px;
-                   padding: 15px 0px;
-                   border: 1px #ccc solid;
-                   width: 1000px;
-                   height:2000px;
-                   float: left;
-                   background-color: rgba(255,255,255,0.3);
-               }
-        .main_goshowa {
-        	       display: block;;
-                   width: 960px;
-                   padding: 8px;
-                   border: 5px green double;
-                   margin: 10px 5px;
-        }
-         .main_goshowb {
-        	       display: block;;
-                   width: 960px;
-                   padding: 8px;
-                   border: 5px #0000CD double;
-                   margin: 10px 5px;
-        }
-        .sidebar_name {
-        	       right: 50px;
-        	       display: block;;
-        	       z-index: 3;
-        	       position:absolute;
-                   width: 350px;
-                   padding: 8px;
-                   border: 5px blue double;
-                   margin: 10px 5px;
-                   float: left;
-                   background-color: rgba(255,255,255,0.3);
-                  }
-        .text_need{
-        	       font-size: 20px;
-        }
-        .text_area{
-        	       font-size: 24px;
-        }
-        .gotop {
-                   position: fixed;
-                   right: 30px;
-                   bottom: 40px;
-                   z-index: 9;
-              }
-        #footer {
-                     padding:0;
-                     display:block;
-                     background-color: rgba(0,204,255,0.3);
-        	         min-width: 100%;
-                     margin-top: 20px!important;
-                     text-align:center;}
-
-	</style>
 	<script>
 		function gogogo(){ /*朝指定位置前進中  使用jquery喔喔 速度850*/
        		$('.here').css({'opacity':0,});
@@ -155,6 +32,7 @@
 	        </ul>
 	    </nav>
     </div>
+    <div class="myDiv"></div>
     <div class="inoneDiv">
         <div class="mainShow">
         	<div id="learn" class="main_goshowa">
@@ -188,33 +66,123 @@
                 玩<a class="hkb">傳說對決</a>，歷史桃園市第24名莉莉安，新竹縣第9莉莉安。<br><br>
                 同時也喜歡看古文觀止、古詩全集等<a class="hkb">文言文創作</a>。<br><br>
                 喜歡<a class="hkb">攝影</a>，特別是喜歡將長時間影片以濃縮的方式做成縮時。<br><br>
-                <!--<img src="assets/img/g_01.jpg" style="width:300px;">
-                <img src="assets/img/g_02.jpg" style="width:300px;">
+                <img src="assets/img/g_01.jpg" style="height:212px;">
+                <!--<img src="assets/img/g_02.jpg" style="width:300px;">-->
                 <video width="380px" controls>
                      <source src="assets/video/short.mp4" type="video/mp4">
-                </video>-->
+                </video>
         	    </span>
         	</div>
         	<br>
         	<div id="goal" class="main_goshowa">
         	    <h1 class="hka">目標</h1><br>
         	    <span class="text_area">
-                曾經幫人剪片，以及使用模板幫人製作開頭影片。<br><br>
+                在這四年裡，我打算好好充實自己的程式能力以及商學院相關的能力，能在未來職場上或是工作上能夠幫助到自己。<br><br>
         	    </span>
         	</div>		
         	<br>	
         	<div id="ownn" class="main_goshowb">
         	    <h1 class="hka">自我期許</h1><br>
         	    <span class="text_area">
-                曾經幫人剪片，以及使用模板幫人製作開頭影片。<br><br>
+                希望未來能好好賺錢，養活自己，不讓自己或家人露宿街頭。甚至更期待能讓自己的專長，成功地運用，而不是用在使用非法行為上。<br><br>
         	    </span>
         	</div>	
         	<br>	
-        	<div id="life" class="main_goshowa">
+        	<div id="life" class="main_goshowc">
         	    <h1 class="hka">生活</h1><br>
-        	    <span class="text_area">
-                曾經幫人剪片，以及使用模板幫人製作開頭影片。<br><br>
-        	    </span>
+        	    <div class="main_life">
+        	    	<div class="lifecard"> <!--第一張 -->
+						<div class="lifecard-overin">
+							<div class="lifecard-img">
+								<img src="assets/img/b_1020630.jpg"  style="width:360px;">
+							</div>
+							<div class="lifecard-text">
+								<br><br>
+								<p>民國102年6月30日</p>
+								<p>人生中第一次滿滿的蓮花池(❛◡❛✿)/</p>
+								<p>地點：新埔</p>
+								<br><br>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="lifecard"> <!--第二張 -->
+						<div class="lifecard-overin">
+							<div class="lifecard-img">
+								<img src="assets/img/b_1050124.jpg"  style="width:360px;">
+							</div>
+							<div class="lifecard-text">
+								<br><br>
+								<p>民國105年1月24日</p>
+								<p>人生中第一次滿滿的雪花，<br>不是油桐花喔喔!!(*´∀`)~♥</p>
+								<p>地點：關西，我家對山馬武督</p>
+								<br><br>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="lifecard"> <!--第三張 -->
+						<div class="lifecard-overin">
+							<div class="lifecard-img">
+								<img src="assets/img/b_1060520.jpg"  style="width:360px;">
+							</div>
+							<div class="lifecard-text">
+								<br><br>
+								<p>民國106年5月20日</p>
+								<p>河還是如往常般的清澈!!(ゝ∀･)</p>
+								<p>地點：關西鳳山溪，南華橋下，<br>我家下河</p>
+								<br><br>
+							</div>
+						</div>
+					</div>
+              </div>
+              <div class="main_life">
+              	    <div class="lifecard"> <!--第一張 -->
+						<div class="lifecard-overin">
+							<div class="lifecard-img">
+								<img src="assets/img/b_1080114.jpg"  style="width:360px;">
+							</div>
+							<div class="lifecard-text">
+								<br><br>
+								<p>民國108年1月14日</p>
+								<p>棉花糖( ^ω^)/</p>
+								<p>地點：關西，顯伯公山頂天空</p>
+								<br><br>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="lifecard"> <!--第二張 -->
+						<div class="lifecard-overin">
+							<div class="lifecard-img">
+								<img src="assets/img/b_1080511.jpg"  style="width:360px;">
+							</div>
+							<div class="lifecard-text">
+								
+								<p>民國108年5月11日</p>
+								<p>因為管理學課程，<br>來台北當志工ヽ(✿ﾟ▽ﾟ)ﾉ</p>
+								<p>地點：台北大龍峒地區</p>
+								<p>ps.拍我的是地上的腳架喔!!(´c_`)</p>
+								
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="lifecard"> <!--第三張 -->
+						<div class="lifecard-overin">
+							<div class="lifecard-img">
+								<img src="assets/img/b_1080713.jpg"  style="width:360px;">
+							</div>
+							<div class="lifecard-text">
+								<br><br>
+								<p>民國108年7月13日</p>
+								<p>偶爾陪家人外出去爬山!(*´∀`)~♥</p>
+								<p>地點：南投花蓮界山石門山!!</p>
+								<br><br>
+							</div>
+						</div>
+					</div>
+              </div>
         	</div>			
         </div>
         <div class="sidebar_name">
@@ -232,16 +200,18 @@
         	<a href="https://www.facebook.com/ffoogera/"><img src="assets/img/linway1.png" style="height:50px;"></a>
             <a href="https://www.instagram.com/_yuan0408/"><img src="assets/img/linway2.png" style="height:50px;"></a>
             <a href="https://www.youtube.com/channel/UCkDxGhZ-pdGj3gZIBfcpAMQ"><img src="assets/img/linway3.png" style="height:50px;"></a>
+            <audio src="assets/music/012.mp3" controls autoplay></audio>
         </div>
         <div id="gotop" class="gotop">
         	    <a href="#top"  onclick="gogogo('top')"><img src="assets/img/gotop.png" style="height: 80px;"></a>
         </div>	
     </div>
-    <br>
+    <br><br><br>
     <div id="footer">
     	<br>
-       <p>Posted by: W3School</p>
-       <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
+       <p>版權所有，請勿抄襲!!!!  版權歸  資管二甲  10744125  吳學沅  所有 </p><br>
+       <p>建議使用  chrome瀏覽器瀏覽!!</p><br>
+       <p>背景音樂  Actium - Letting Go</p>
     </div>
 </body>
 </html>
